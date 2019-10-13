@@ -45,15 +45,12 @@ if(isset($_POST['submit'])) {
         $username = mysqli_real_escape_string($conn, $_POST['username']);
         $password = mysqli_real_escape_string($conn, $_POST['password']);
 
-        echo "MY";
-        echo $email;
-        echo "MY";
 
-        echo $_POST['first_name'] . "<br/>";
-        echo $_POST['last_name'] . "<br/>";
-        echo $_POST['username'] . "<br/>";
-        echo $_POST['email'] . "<br/>";
-        echo $_POST['password'] . "<br/>";
+//        echo $_POST['first_name'] . "<br/>";
+//        echo $_POST['last_name'] . "<br/>";
+//        echo $_POST['username'] . "<br/>";
+//        echo $_POST['email'] . "<br/>";
+//        echo $_POST['password'] . "<br/>";
 
         $sql = "INSERT INTO users(first_name,last_name,username,password,email) VALUES('$first_name','$last_name','$username','$password','$email')";
         if(mysqli_query($conn, $sql)){
